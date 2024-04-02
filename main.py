@@ -90,7 +90,7 @@ def get_image_url():
     for asset_data in data:
         asset_id = str(asset_data["targetId"])
         original_img_url = asset_data["imageUrl"]
-        watermark_img_url = "https://cdn.discordapp.com/attachments/1146989486383829002/1146992848378527875/Untitled_2.png?ex=651d7495&is=651c2315&hm=eb5abaf1f7aae5189c56cc63d78ae86e1f8b3d5e37546bbf49c06b5e823dd59a&"
+        watermark_img_url = "https://replicate.delivery/pbxt/Kg49TFp87m1YtQLdSYzOmGvQcHUtC31m4MYawczHZ6bggFJJ/download%20(1).jpg"
         
         while True:
             asset_name = get_asset_name(asset_id)
