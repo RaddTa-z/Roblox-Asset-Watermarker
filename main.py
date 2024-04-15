@@ -65,7 +65,7 @@ def add_watermark(original_img_url, watermark_img_url, opacity=1.0, text=None, t
         # Draw the text
         draw.text(position, text, font=font, fill=text_color)
 
-    png_image = combined_img.convert("RGBA")  # Change to RGBA for transparency
+    png_image = combined_img.convert("RGBA") 
 
     return png_image
 
@@ -96,7 +96,6 @@ def get_image_url():
             asset_name = get_asset_name(asset_id)
             if asset_name != "Name Not Found":
                 break
-            # Retry after a short delay
             time.sleep(1)
         
         opacity = float(request.args.get("opacity", 1.0))
